@@ -1,0 +1,17 @@
+version: 2
+
+
+sources:
+  - name: demo
+    database: DEMO2
+    schema: DEMO_SCHEMA2
+    config:
+      enabled: true
+    tables:
+      - name: BIKE # enabled
+        config:
+          enabled: true
+      - name: WEATHER_EXTRACTED # not enabled
+        config:
+          enabled: false
+
