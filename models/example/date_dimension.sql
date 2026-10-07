@@ -2,7 +2,7 @@ WITH CTE1 AS (
     SELECT
         STARTED_AT
 
-    FROM {{ source('demo', 'BIKE') }}
+    FROM {{ ref('stg_bike') }}
     WHERE LOWER(STARTED_AT) != 'start_at'
 ),
 
