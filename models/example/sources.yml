@@ -13,5 +13,5 @@ sources:
           enabled: true
       - name: WEATHER_EXTRACTED # not enabled
         config:
-          enabled: false
+          enabled: true
 
